@@ -18,6 +18,7 @@ print('Conexão realizada com sucesso!\n')
 
 cursor = conexao.cursor()
 
+# Função menu
 def menu():
     while True:
         print('|| Biblioteca de jogos ||')
@@ -159,6 +160,7 @@ def editar():
     else:
         return
 
+# Função excluir
 def excluir():
     while True:
         try:
@@ -185,6 +187,5 @@ def excluir():
         )
         conexao.commit()
         print('Registro excluído com sucesso!')
-
 
 menu()
